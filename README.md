@@ -57,8 +57,8 @@ For Windows users, follow these additional steps:
 
 2. **Create a virtual environment** (recommended):
    ```powershell
-   python -m venv venv
-   venv\Scripts\Activate.ps1
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
    ```
    
    If you get an execution policy error, run:

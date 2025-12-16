@@ -45,6 +45,52 @@ pip install -r requirements.txt
 # The system will attempt to use the builtin database or fallback to 'calima-msa-r13'
 ```
 
+### Windows Setup
+
+For Windows users, follow these additional steps:
+
+1. **Open PowerShell or Command Prompt**:
+   - Navigate to the project directory:
+   ```powershell
+   cd path\to\GenderAr
+   ```
+
+2. **Create a virtual environment** (recommended):
+   ```powershell
+   python -m venv venv
+   venv\Scripts\Activate.ps1
+   ```
+   
+   If you get an execution policy error, run:
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
+   Then try activating again.
+
+3. **Install dependencies**:
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
+4. **Windows-specific considerations**:
+   - **CAMeL Tools**: May require additional setup. If you encounter issues, try:
+     ```powershell
+     pip install camel-tools --no-cache-dir
+     ```
+   - **CUDA for PyTorch** (if using GPU):
+     - Install CUDA Toolkit from [NVIDIA](https://developer.nvidia.com/cuda-downloads)
+     - PyTorch will detect CUDA automatically if properly installed
+     - Verify CUDA availability:
+     ```powershell
+     python -c "import torch; print(torch.cuda.is_available())"
+     ```
+   - **Path separators**: All scripts use forward slashes (`/`) which work on Windows, but if you encounter path issues, ensure you're using the correct format
+
+5. **Verify installation**:
+   ```powershell
+   python -c "import transformers; import torch; import camel_tools; print('All dependencies installed successfully!')"
+   ```
+
 ## Project Structure
 
 ```
@@ -69,11 +115,19 @@ GenderAr/
 
 ## Usage
 
+> **Note**: All commands work in both bash (Linux/Mac) and PowerShell (Windows). On Windows, you can use either PowerShell or Command Prompt.
+
 ### 1. Fine-tuning AraBERT Model
 
 Train the transformer model on the Arabic names dataset:
 
+**Linux/Mac:**
 ```bash
+python fine_tuning.py
+```
+
+**Windows (PowerShell):**
+```powershell
 python fine_tuning.py
 ```
 

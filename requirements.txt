@@ -1,0 +1,11 @@
+camel-tools
+transformers
+torch
+scikit-learn
+datasets
+pandas
+matplotlib
+seaborn
+numpy
+tqdm
+accelerate

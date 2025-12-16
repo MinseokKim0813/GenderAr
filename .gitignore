@@ -1,0 +1,56 @@
+# Model files
+*.pkl
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.h5
+*.ckpt
+
+# Model directories
+final_arabert_gender_model/
+results/
+tmp_trainer/
+
+# Logs
+logs/
+*.log
+events.out.tfevents.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (if large)
+*.csv
+*.json
+*.png
+*.jpg
+*.jpeg
+

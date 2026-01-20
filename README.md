@@ -1,4 +1,4 @@
-# GenderAr: Arabic Name Gender Classification
+# GenderAr: A Novel Approach to Arabic Name Gender Classification
 
 A comprehensive machine learning system for classifying the gender of Arabic names. This project compares multiple methodologies—ranging from linguistic rules to deep learning—and introduces a Hybrid Cascade System that achieves 91.68% accuracy by combining the structural precision of morphology with the robustness of transformers.
 

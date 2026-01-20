@@ -2,6 +2,8 @@
 
 A comprehensive machine learning system for classifying the gender of Arabic names. This project compares multiple methodologies—ranging from linguistic rules to deep learning—and introduces a Hybrid Cascade System that achieves 91.68% accuracy by combining the structural precision of morphology with the robustness of transformers.
 
+A research report is accessible through this [link]([url]([https://drive.google.com/file/d/12Fqo6CqU5zPI6X3DGB6CRB2hLpGwGlxB/view])
+
 ## Overview
 
 Gender identification of Arabic names is a complex task due to the lack of strict orthographic rules and the ambiguity of names that share forms with particles (e.g., "Ali" vs. "on").

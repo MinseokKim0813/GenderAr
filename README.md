@@ -15,7 +15,7 @@ This project implements and evaluates four distinct approaches:
 - **Fine-tuned AraBERT**: Transfer learning using bert-base-arabertv02.
 - **Hybrid Inference (Cascade)**: A pipeline that intelligently prioritizes morphological rules and falls back to deep learning for ambiguous cases.
 
-## 🏆 Key Results
+## Key Results
 
 Based on a test set of ~1,300 names (from a cleaned dataset of 13,622), the Hybrid approach significantly outperformed individual baselines.
 
@@ -26,7 +26,7 @@ Based on a test set of ~1,300 names (from a cleaned dataset of 13,622), the Hybr
 | Fine-tuned AraBERT | 74.73% | 0.74 | Robust but data-hungry |
 | Word Embedding | 65.00% | 0.65 | Shows semantic gender bias |
 
-## 🧠 Methodology & Analysis
+## Methodology & Analysis
 
 ### 1. The Morphological Approach (High Precision)
 
@@ -53,11 +53,11 @@ The project analysis revealed a critical "blind spot": 94% of names were not ide
 
 ## Features
 
-- 🎯 **State-of-the-Art Accuracy**: 91.68% on the Muslim Names Dataset.
-- 🔄 **Smart Fallback System**: Automatically detects when linguistic analysis fails.
-- 📊 **Comprehensive Metrics**: Tracks Precision, Recall, and F1 across gender classes.
-- 🔤 **Feature Engineering**: Extracts n-grams and morphological templates.
-- 📈 **Visualization**: Generates training curves and confusion matrices.
+- **State-of-the-Art Accuracy**: 91.68% on the Muslim Names Dataset.
+- **Smart Fallback System**: Automatically detects when linguistic analysis fails.
+- **Comprehensive Metrics**: Tracks Precision, Recall, and F1 across gender classes.
+- **Feature Engineering**: Extracts n-grams and morphological templates.
+- **Visualization**: Generates training curves and confusion matrices.
 
 ## Installation
 
@@ -70,7 +70,7 @@ The project analysis revealed a critical "blind spot": 94% of names were not ide
 
 1. **Clone the repository:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/MinseokKim0813/GenderAr
 cd GenderAr
 ```
 
